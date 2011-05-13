@@ -7,4 +7,7 @@
 \DeclareFontShape{T1}{ubuntu}{b}{n}{ <-> ubuntubd}{}
 \DeclareFontShape{T1}{ubuntu}{b}{it}{ <-> ubuntubi}{}
 
+\DeclareFontShape{T1}{ubuntu}{bx}{n}{<->ssub * ubuntu/b/n}{}
+\DeclareFontShape{T1}{ubuntu}{bx}{it}{<->ssub * ubuntu/b/it}{}
+
 \endinput
