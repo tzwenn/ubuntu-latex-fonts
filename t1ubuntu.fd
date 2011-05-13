@@ -1,0 +1,5 @@
+\ProvidesFile{t1ubuntu.fd}[Ubuntu Font]
+\DeclareFontFamily{T1}{ubuntu}{}
+\DeclareFontShape{T1}{ubuntu}{m}{n}{ <-> ubuntu}{}
+
+\endinput
