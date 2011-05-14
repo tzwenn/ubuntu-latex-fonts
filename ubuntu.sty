@@ -1,6 +1,10 @@
 \ProvidesPackage{ubuntu}
+\RequirePackage{ifpdf}
 
-\pdfmapfile{+ubuntu.map}
+\ifpdf
+	\pdfmapfile{+ubuntu.map}
+\fi
+
 \renewcommand{\encodingdefault}{T1}
 \renewcommand{\rmdefault}{ubuntu}
 \endinput
