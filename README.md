@@ -38,7 +38,7 @@ In case you'd liked to have you entire document be set using this font family ad
 Of course an automated installation (i.e. a nice Makefile) is missing yet.
 Some testing would be nice too.
 
-###Whom should be thanked###
+##Whom should be thanked##
 
 First and foremost the Stylistic Foundations under the supervision of Canonical and Dalton Maag, enabling the community to build on their work.
 
