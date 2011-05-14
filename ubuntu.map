@@ -1,4 +1,4 @@
-ubuntu Ubuntu " T1Encoding ReEncodeFont " <ubuntu.ttf T1-WGL4.enc
-ubuntubd Ubuntu-Bold " T1Encoding ReEncodeFont " <ubuntubd.ttf T1-WGL4.enc
-ubuntubi Ubuntu-BoldItalic " T1Encoding ReEncodeFont " <ubuntubi.ttf T1-WGL4.enc
-ubuntui Ubuntu-Italic " T1Encoding ReEncodeFont " <ubuntui.ttf T1-WGL4.enc
+ubuntu Ubuntu " T1Encoding ReEncodeFont " <ubuntu.pfb T1-WGL4.enc
+ubuntubd Ubuntu-Bold " T1Encoding ReEncodeFont " <ubuntubd.pfb T1-WGL4.enc
+ubuntubi Ubuntu-BoldItalic " T1Encoding ReEncodeFont " <ubuntubi.pfb T1-WGL4.enc
+ubuntui Ubuntu-Italic " T1Encoding ReEncodeFont " <ubuntui.pfb T1-WGL4.enc
