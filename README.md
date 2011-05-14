@@ -1,6 +1,6 @@
-This project enables you to use the original Ubuntu Font Familiy (see: hhttp://font.ubuntu.com/) with LaTeX2e.
+This project enables you to use the original Ubuntu Font Familiy (see: http://font.ubuntu.com/) with LaTeX2e.
 
-Currently available fonts are Ubuntu regular, Ubuntu italic, Ubuntu bold and Ubuntu bold italic and can be envoked by using the common <code>\\textit</code>, <code>\\textbf</code> commands.
+Currently available fonts are Ubuntu regular, Ubuntu italic, Ubuntu bold and Ubuntu bold italic and can be changed by using the common <code>\\textit</code>, <code>\\textbf</code> commands.
 
 ##How to install##
 
@@ -18,7 +18,7 @@ If you want to change your font set mid-in your document just write:
 
 	\usefont{T1}{ubuntu}{m}{n}
 
-In case you'd liked to have you entire document be set using this font add this to your preamble:
+In case you'd liked to have you entire document be set using this font family add this to your preamble:
 
 	\usepackage{ubuntu}
 
@@ -26,6 +26,6 @@ In case you'd liked to have you entire document be set using this font add this 
 
 The fonts were converted as described by Gordon Grubert (http://fachschaft.physik.uni-greifswald.de/~stitch/ttf.html). However they are just bitmaps by now, what definitly has to be changed.
 
-Even so an automated installation (e.g. a nice Makefile) is missing yet.
+And of course an automated installation (i.e. a nice Makefile) is missing yet.
 
 
