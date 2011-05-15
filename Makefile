@@ -33,7 +33,8 @@ TARGETDIRS = $(TFMDIR) $(AFMDIR) $(PFBDIR) $(STYDIR) $(FDDIR)
 CP      = cp
 MKDIR   = mkdir -p
 TEXHASH = texhash
-UPDMAP  = updmap
+UPDMAP  = updmap-sys
+RMDIR   = rm -rf
 
 all:
 
@@ -54,8 +55,19 @@ copy:
 reindex:
 	$(TEXHASH) $(PREFIX)
 
-updatemap:
+enablemap:
 	$(UPDMAP) --enable Map=$(MAP)
 
-install: makedirs copy reindex updatemap
+install: makedirs copy reindex enablemap
+
+delfiles:
+	for d in $(TARGETDIRS); do \
+		$(RMDIR) $(PREFIX)/$$d; \
+	done
+	$(RM) $(PREFIX)/$(MAPDIR)/$(MAP)
+
+disablemap:
+	$(UPDMAP) --disable $(MAP)
+
+uninstall: delfiles reindex disablemap 
 
