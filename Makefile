@@ -30,8 +30,10 @@ TARGETDIRS = $(TFMDIR) $(AFMDIR) $(PFBDIR) $(STYDIR) $(FDDIR)
 ## commands
 #
 
-CP    = cp
-MKDIR = mkdir -p
+CP      = cp
+MKDIR   = mkdir -p
+TEXHASH = texhash
+UPDMAP  = updmap
 
 all:
 
@@ -49,5 +51,11 @@ copy:
 	$(CP) $(STY) $(PREFIX)/$(STYDIR)/
 	$(CP) $(FD)  $(PREFIX)/$(FDDIR)/
 
-install: makedirs copy
+reindex:
+	$(TEXHASH) $(PREFIX)
+
+updatemap:
+	$(UPDMAP) --enable Map=$(MAP)
+
+install: makedirs copy reindex updatemap
 
