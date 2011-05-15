@@ -45,7 +45,8 @@ TARGETDIRS = $(TFMDIR) $(AFMDIR) $(PFBDIR) $(STYDIR) $(FDDIR)
 CP      = cp
 MKDIR   = mkdir -p
 TEXHASH = texhash
-UPDMAP  = updmap-sys
+#I'd liked very much to have updmap-sys working
+UPDMAP  = updmap
 RMDIR   = rm -rf
 
 all:
@@ -70,7 +71,9 @@ reindex:
 enablemap:
 	$(UPDMAP) --enable Map=$(MAP)
 
-install: makedirs copy reindex enablemap
+updatemap: enablemap
+
+install: makedirs copy reindex
 
 delfiles:
 	for d in $(TARGETDIRS); do \
@@ -81,5 +84,21 @@ delfiles:
 disablemap:
 	$(UPDMAP) --disable $(MAP)
 
-uninstall: delfiles reindex disablemap 
+cleanmap: disablemap
+
+uninstall: delfiles reindex
+
+help:
+	@echo "Make file for ubuntu-latex-fonts"
+	@echo "For installation of the Ubuntu Font Family type:\n"
+	@echo "\tsudo make install"
+#@echo "\tmake updatemap"
+	@echo
+	@echo "For uninstallation type:\n"
+	@echo "\tsudo make uninstall"
+#@echo "\tmake cleanmap"
+	@echo
+	@echo "Hint: By default the fonts are installed to $(PREFIX)."
+	@echo "You can change that behavior by passing PREFIX, e.g.:"
+	@echo "\tmake PREFIX=~/texmf install"
 

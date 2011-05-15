@@ -6,21 +6,19 @@ Currently available fonts are Ubuntu regular, Ubuntu italic, Ubuntu bold and Ubu
 
 You can just drop all these files into your project's folder and start using the fonts.
 
-For global usage you will have to copy them into their according directories in your LaTeX-Distribution, e.g. for the Adobe Font Metrics on Texlive:
+For global installation and usage you just have to type:
 
-	mkdir -p /usr/share/texmf-texlive/fonts/afm/public/ubuntu/
-	cp *.afm /usr/share/texmf-texlive/fonts/afm/public/ubuntu/
+	$ sudo make install
 
-For TrueType fonts embedded into you PDFs, you must move the ttf-files into pdftex' <code>"TrueType Font Dir"</code>, as well as map the fonts in ubuntu.map. Afterwards run:
+This will assume your TeX-distribution's location to be	<code>/usr/share/texmf-texlive/</code>. In case you like to change that (i.e. installing it just for your account) pass an other <code>PREFIX</code> to the Makefile:
 
-	texhash /usr/share/texmf-texlive/
-
+	$ make PREFIX=~/texmf install
 
 ##How to use##
 
 If you want to change your font set mid-in your document just write:
 
-	% If you are using pdflatex put this into your preamble
+	% Put this into your preamble
 	\pdfmapfile{+ubuntu.map}
 	
 	\begin{document}
@@ -35,7 +33,10 @@ In case you'd liked to have you entire document be set using this font family ad
 
 ##What is missing##
 
-Of course an automated installation (i.e. a nice Makefile) is missing yet.
+The makefile is designed for a usual texlive installation on Ubuntu Linux. An autolocation of the TeX-distribution have to be done. Currently also the use of <code>pdflatex</code> is enforced, old-school dvi stuff will not work.
+
+There are also other shapes and style in the Ubuntu Font Family (Medium, Light) which have definitely to be included too. Changing them should be possible from the included package within the document.
+
 Some testing would be nice too.
 
 ##Whom should be thanked##
