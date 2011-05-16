@@ -101,7 +101,8 @@ help:
 	@echo "\tsudo make uninstall"
 #@echo "\tmake cleanmap"
 	@echo
-	@echo "Hint: By default the fonts are installed to $(PREFIX)."
-	@echo "You can change that behavior by passing PREFIX, e.g.:"
+	@echo "Hint: By default the fonts are installed to $(PREFIX). \
+You can change that behavior by passing PREFIX, e.g.:\n"
 	@echo "\tmake PREFIX=~/texmf install"
 
+.PHONY: install uninstall help
