@@ -1,6 +1,6 @@
 This project enables you to use the original Ubuntu Font Familiy (see: http://font.ubuntu.com ) with LaTeX2e.
 
-Currently available fonts are Ubuntu regular, Ubuntu italic, Ubuntu bold and Ubuntu bold italic and can be changed by using the common <code>\\textit</code>, <code>\\textbf</code> commands.
+Currently available fonts are Ubuntu regular, Ubuntu italic, Ubuntu bold and Ubuntu bold italic (all version 0.71.2) and can be changed by using the common <code>\\textit</code> and <code>\\textbf</code> commands.
 
 ##How to install##
 
