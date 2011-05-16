@@ -1,6 +1,6 @@
-This project enables you to use the original Ubuntu Font Familiy (see: http://font.ubuntu.com ) with LaTeX2e.
+This project enables you to use the original Ubuntu Font Familiy (http://font.ubuntu.com) with LaTeX2e.
 
-Currently available fonts are Ubuntu regular, Ubuntu italic, Ubuntu bold and Ubuntu bold italic (all version 0.71.2) and can be changed by using the common <code>\\textit</code> and <code>\\textbf</code> commands.
+Available fonts are Ubuntu Regular, Light and Medium (all version 0.71.2). They can be modified using the common <code>\\textit</code> and <code>\\textbf</code> commands. Please mind, that Light and Medium don't come with an own bold shape. Medium and Ubuntu Bold are used as fallbacks.
 
 ##How to install##
 
@@ -16,20 +16,24 @@ This will automatically determine your TeX-distribution's location. In case you 
 
 ##How to use##
 
+In case you'd liked to have you entire document be set using this font family add this to your preamble:
+
+	\usepackage{ubuntu}
+
+Available package options are: <code>regular</code>, <code>light</code>, <code>medium</code>, standing for the different Ubuntu Fonts, respectively <code>none</code> for later activation.
+
 If you want to change your font set mid-in your document just write:
 
 	% Put this into your preamble
-	\pdfmapfile{+ubuntu.map}
+	\usepackage[none]{ubuntu}
 	
 	\begin{document}
 
 	% ...
 
-	\usefont{T1}{ubuntu}{m}{n}
+	\fontUbuntu 
 
-In case you'd liked to have you entire document be set using this font family add this to your preamble:
-
-	\usepackage{ubuntu}
+or alternatively <code>\fontUbuntuLight</code> or <code>\fontUbuntuMedium</code>.
 
 ##What is missing##
 
@@ -43,6 +47,6 @@ Some testing would be nice too.
 
 First and foremost the Stylistic Foundations under the supervision of Canonical and Dalton Maag, enabling the community to build on their work.
 
-The fonts were converted as described by Gordon Grubert ( http://fachschaft.physik.uni-greifswald.de/~stitch/ttf.html ). Thanks there too.
+The fonts were converted as described by Gordon Grubert (http://fachschaft.physik.uni-greifswald.de/~stitch/ttf.html). Thanks there too.
 
 Thanks to Dominik Moritz (domoritz) (https://github.com/domoritz) for patching the Makefile, so it automatically determines where to install all files.
