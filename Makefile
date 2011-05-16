@@ -14,13 +14,14 @@
 #
 
 FONTBASE = ubuntu
-TFM := $(shell ls $(FONTBASE)*.tfm)
+RES = resources
+TFM := $(shell ls $(RES)/$(FONTBASE)*.tfm)
 AFM = $(TFM:%.tfm=%.afm)
 PFB = $(TFM:%.tfm=%.pfb)
 
-MAP = $(FONTBASE).map
-STY = $(FONTBASE).sty
-FD  = t1$(FONTBASE).fd
+MAP = $(RES)/$(FONTBASE).map
+STY = $(RES)/$(FONTBASE).sty
+FD  = $(RES)/t1$(FONTBASE).fd
 
 ## Installation targets
 #
