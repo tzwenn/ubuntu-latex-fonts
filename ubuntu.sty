@@ -1,10 +1,55 @@
 \ProvidesPackage{ubuntu}
 \RequirePackage{ifpdf}
+\RequirePackage{ifthen}
 
+% For PDF map the TrueType fonts
 \ifpdf
 	\pdfmapfile{+ubuntu.map}
 \fi
 
-\renewcommand{\encodingdefault}{T1}
-\renewcommand{\rmdefault}{ubuntu}
+% Options represented by boolean - not nice
+% TODO: case by value 
+
+\newboolean{ubuntuRegular}
+\setboolean{ubuntuRegular}{true}
+
+\newboolean{ubuntuNone}
+\setboolean{ubuntuNone}{false}
+
+% Parse options
+
+\DeclareOption*{%
+	\PackageWarning{ubuntu}{Unknown option ‘\CurrentOption’}%
+}
+
+\DeclareOption{none}{%
+	\setboolean{ubuntuRegular}{false}
+	\setboolean{ubuntuNone}{true}
+}
+
+\DeclareOption{regular}{%
+	\setboolean{ubuntuRegular}{true}
+	\setboolean{ubuntuNone}{false}
+}
+\ProcessOptions\relax
+
+% Commands
+
+\newcommand{\Ubuntu}{%
+	\renewcommand{\encodingdefault}{T1}%
+	\renewcommand{\rmdefault}{ubuntu}%
+}
+
+\newcommand{\fontubuntu}{%
+	\usefont{T1}{ubuntu}{m}{n}
+}
+
+% Initial font
+
+\ifthenelse{\boolean{ubuntuRegular}}{%
+	\Ubuntu{} %
+}{\ifthenelse{\boolean{ubuntuNone}}{%
+	}{%
+}}
+
 \endinput
