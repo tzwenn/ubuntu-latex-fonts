@@ -37,11 +37,11 @@ or alternatively <code>\fontUbuntuLight</code> or <code>\fontUbuntuMedium</code>
 
 ##What is missing##
 
-Changing the font in the middle of a file does not affect all writings, as section captions or other external defined texts. If this matters to you, consider setting your whole document in Ubuntu font and trigger for example <code>\usefont{cmbx12}{m}{n}</code> where needed.
+Changing the font in the middle of a file does not affect all writings, as section captions or other external defined texts. If this matters to you, consider setting your whole document in Ubuntu font and trigger for example <code>\\usefont{cmbx12}{m}{n}</code> where needed.
 
 Currently the use of <code>pdflatex</code> is enforced, old-school dvi stuff will not work.
 
-By the way some testing would be nice too.
+Of course some testing and a documentation would be nice too.
 
 ##Whom should be thanked##
 
@@ -50,3 +50,10 @@ First and foremost the Stylistic Foundations under the supervision of Canonical 
 The fonts were converted as described by Gordon Grubert (http://fachschaft.physik.uni-greifswald.de/~stitch/ttf.html). Thanks there too.
 
 Thanks to Dominik Moritz (domoritz) (https://github.com/domoritz) for patching the Makefile, so it automatically determines where to install all files.
+
+##How to support##
+
+1) Download it, write some nice stuff.
+2) Publish your writings, tell your friends.
+3) Fork it, fix an issue. Send pull request.
+4) Flattr it: https://flattr.com/thing/275508/Ubuntu-LaTeX-Fonts
