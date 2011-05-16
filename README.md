@@ -31,9 +31,11 @@ If you want to change your font set mid-in your document just write:
 
 	% ...
 
-	\fontUbuntu 
+	{\fontUbuntu This is Ubuntu Regular}
 
-or alternatively <code>\fontUbuntuLight</code> or <code>\fontUbuntuMedium</code>.
+	Here, the \LaTeX standard is used again.
+
+Alternatively <code>\\fontUbuntuLight</code> or <code>\\fontUbuntuMedium</code> are provided.
 
 ##What is missing##
 
@@ -53,7 +55,7 @@ Thanks to Dominik Moritz (domoritz) (https://github.com/domoritz) for patching t
 
 ##How to support##
 
-1) Download it, write some nice stuff.
-2) Publish your writings, tell your friends.
-3) Fork it, fix an issue. Send pull request.
-4) Flattr it: https://flattr.com/thing/275508/Ubuntu-LaTeX-Fonts
+* Download it, write some nice stuff
+* Publish your writings, tell your friends
+* Fork it, fix an issue. Send pull request
+* Flattr it: https://flattr.com/thing/275508/Ubuntu-LaTeX-Fonts
