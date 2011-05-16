@@ -1,4 +1,4 @@
-\ProvidesFile{t1ubuntulight.fd}[Ubuntu Font]
+\ProvidesFile{t1ubuntulight.fd}[Ubuntu Light Font]
 \DeclareFontFamily{T1}{ubuntulight}{}
 
 %% Ubuntu Light
