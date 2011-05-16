@@ -1,0 +1,18 @@
+\ProvidesFile{t1ubuntumedium.fd}[Ubuntu Medium Font]
+\DeclareFontFamily{T1}{ubuntumedium}{}
+
+%% Ubuntu Medium
+%
+
+\DeclareFontShape{T1}{ubuntumedium}{m}{n}{ <-> ubuntum}{}
+\DeclareFontShape{T1}{ubuntumedium}{m}{it}{ <-> ubuntumi}{}
+
+% Let Ubuntu Bold be the bold version of Ubuntu Medium
+% shame. on. me.
+\DeclareFontShape{T1}{ubuntumedium}{b}{n}{ <-> ubuntubd}{}
+\DeclareFontShape{T1}{ubuntumedium}{b}{it}{ <-> ubuntubi}{}
+
+\DeclareFontShape{T1}{ubuntumedium}{bx}{n}{<->ssub * ubuntumedium/b/n}{}
+\DeclareFontShape{T1}{ubuntumedium}{bx}{it}{<->ssub * ubuntumedium/b/it}{}
+
+\endinput

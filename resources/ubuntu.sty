@@ -10,27 +10,52 @@
 % Options represented by boolean - not nice
 % TODO: case by value 
 
-\newboolean{ubuntuRegular}
-\setboolean{ubuntuRegular}{true}
+\newboolean{bUbuntuRegular}
+\setboolean{bUbuntuRegular}{true}
 
-\newboolean{ubuntuNone}
-\setboolean{ubuntuNone}{false}
+\newboolean{bUbuntuNone}
+\setboolean{bUbuntuNone}{false}
 
-% Parse options
+\newboolean{bUbuntuLight}
+\setboolean{bUbuntuLight}{false}
+
+\newboolean{bUbuntuMedium}
+\setboolean{bUbuntuMedium}{false}
+
+% Parse options - this is ugly
+
+\DeclareOption{none}{%
+	\setboolean{bUbuntuRegular}{false}%
+	\setboolean{bUbuntuNone}{true}%
+	\setboolean{bUbuntuLight}{false}%
+	\setboolean{bUbuntuMedium}{false}%
+}
+
+\DeclareOption{regular}{%
+	\setboolean{bUbuntuRegular}{true}%
+	\setboolean{bUbuntuNone}{false}%
+	\setboolean{bUbuntuLight}{false}%
+	\setboolean{bUbuntuMedium}{false}%
+}
+
+\DeclareOption{light}{%
+	\setboolean{bUbuntuRegular}{false}%
+	\setboolean{bUbuntuNone}{false}%
+	\setboolean{bUbuntuLight}{true}%
+	\setboolean{bUbuntuMedium}{false}%
+}
+
+\DeclareOption{medium}{%
+	\setboolean{bUbuntuRegular}{false}%
+	\setboolean{bUbuntuNone}{false}%
+	\setboolean{bUbuntuLight}{false}%
+	\setboolean{bUbuntuMedium}{true}%
+}
 
 \DeclareOption*{%
 	\PackageWarning{ubuntu}{Unknown option ‘\CurrentOption’}%
 }
 
-\DeclareOption{none}{%
-	\setboolean{ubuntuRegular}{false}
-	\setboolean{ubuntuNone}{true}
-}
-
-\DeclareOption{regular}{%
-	\setboolean{ubuntuRegular}{true}
-	\setboolean{ubuntuNone}{false}
-}
 \ProcessOptions\relax
 
 % Commands
@@ -44,12 +69,34 @@
 	\usefont{T1}{ubuntu}{m}{n}
 }
 
-% Initial font
+\newcommand{\UbuntuLight}{%
+	\renewcommand{\encodingdefault}{T1}%
+	\renewcommand{\rmdefault}{ubuntulight}%
+}
 
-\ifthenelse{\boolean{ubuntuRegular}}{%
-	\Ubuntu{} %
-}{\ifthenelse{\boolean{ubuntuNone}}{%
-	}{%
-}}
+\newcommand{\fontubuntulight}{%
+	\usefont{T1}{ubuntulight}{m}{n}
+}
+
+\newcommand{\UbuntuMedium}{%
+	\renewcommand{\encodingdefault}{T1}%
+	\renewcommand{\rmdefault}{ubuntumedium}%
+}
+
+\newcommand{\fontubuntumedium}{%
+	\usefont{T1}{ubuntumedium}{m}{n}
+}
+
+% Initial font - an ifcase is much nicer, isn't it?
+
+\ifthenelse{\boolean{bUbuntuRegular}}%
+	{\Ubuntu{}}%
+{\ifthenelse{\boolean{bUbuntuNone}}%
+	{}%
+{\ifthenelse{\boolean{bUbuntuLight}}%
+	{\UbuntuLight{}}%
+{\ifthenelse{\boolean{bUbuntuMedium}}%
+	{\UbuntuMedium{}}%
+{}}}}%
 
 \endinput

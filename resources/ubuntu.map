@@ -2,3 +2,7 @@ ubuntu Ubuntu " T1Encoding ReEncodeFont " <ubuntu.pfb T1-WGL4.enc
 ubuntubd Ubuntu-Bold " T1Encoding ReEncodeFont " <ubuntubd.pfb T1-WGL4.enc
 ubuntubi Ubuntu-BoldItalic " T1Encoding ReEncodeFont " <ubuntubi.pfb T1-WGL4.enc
 ubuntui Ubuntu-Italic " T1Encoding ReEncodeFont " <ubuntui.pfb T1-WGL4.enc
+ubuntul Ubuntu-Light " T1Encoding ReEncodeFont " <ubuntul.pfb T1-WGL4.enc
+ubuntuli Ubuntu-Light-Italic " T1Encoding ReEncodeFont " <ubuntuli.pfb T1-WGL4.enc
+ubuntum Ubuntu-Medium " T1Encoding ReEncodeFont " <ubuntum.pfb T1-WGL4.enc
+ubuntumi Ubuntu-Medium-Italic " T1Encoding ReEncodeFont " <ubuntumi.pfb T1-WGL4.enc

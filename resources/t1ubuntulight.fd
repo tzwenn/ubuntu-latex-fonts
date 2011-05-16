@@ -1,0 +1,18 @@
+\ProvidesFile{t1ubuntulight.fd}[Ubuntu Light Font]
+\DeclareFontFamily{T1}{ubuntulight}{}
+
+%% Ubuntu Light
+%
+
+\DeclareFontShape{T1}{ubuntulight}{m}{n}{ <-> ubuntul}{}
+\DeclareFontShape{T1}{ubuntulight}{m}{it}{ <-> ubuntuli}{}
+
+% Let Ubuntu Medium be the bold version of Ubuntu Light
+% shame. on. me.
+\DeclareFontShape{T1}{ubuntulight}{b}{n}{ <-> ubuntum}{}
+\DeclareFontShape{T1}{ubuntulight}{b}{it}{ <-> ubuntumi}{}
+
+\DeclareFontShape{T1}{ubuntulight}{bx}{n}{<->ssub * ubuntulight/b/n}{}
+\DeclareFontShape{T1}{ubuntulight}{bx}{it}{<->ssub * ubuntulight/b/it}{}
+
+\endinput
