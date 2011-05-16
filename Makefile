@@ -26,7 +26,9 @@ FD  = $(RES)/t1$(FONTBASE).fd
 ## Installation targets
 #
 
-PREFIX = /usr/share/texmf-texlive
+# PREFIX = /usr/share/texmf-texlive
+# automatically get directory path
+PREFIX = $(shell kpsewhich -var-value TEXMFLOCAL)
 
 TFMDIR = fonts/tfm/$(FONTBASE)
 AFMDIR = fonts/afm/$(FONTBASE)
