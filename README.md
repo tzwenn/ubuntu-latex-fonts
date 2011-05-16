@@ -10,7 +10,7 @@ For global installation and usage you just have to type:
 
 	$ sudo make install
 
-This will assume your TeX-distribution's location to be	<code>/usr/share/texmf-texlive/</code>. In case you like to change that (i.e. installing it just for your account) pass an other <code>PREFIX</code> to the Makefile:
+This will automatically determine your TeX-distribution's location. In case you want to change that behavior (i.e. installing it just for your account) pass an other <code>PREFIX</code> to the Makefile:
 
 	$ make PREFIX=~/texmf install
 
@@ -44,3 +44,5 @@ Some testing would be nice too.
 First and foremost the Stylistic Foundations under the supervision of Canonical and Dalton Maag, enabling the community to build on their work.
 
 The fonts were converted as described by Gordon Grubert ( http://fachschaft.physik.uni-greifswald.de/~stitch/ttf.html ). Thanks there too.
+
+Thanks to Dominik Moritz (domoritz) (https://github.com/domoritz) for patching the Makefile, so it automatically determines where to install all files.
