@@ -13,6 +13,6 @@
 \DeclareFontShape{T1}{ubuntulight}{b}{it}{ <-> ubuntumi}{}
 
 \DeclareFontShape{T1}{ubuntulight}{bx}{n}{<->ssub * ubuntulight/b/n}{}
-\DeclareFontShape{T1}{ubuntulight}{bx}{it}{<->ssub * ubuntu/b/it}{}
+\DeclareFontShape{T1}{ubuntulight}{bx}{it}{<->ssub * ubuntulight/b/it}{}
 
 \endinput
