@@ -37,11 +37,11 @@ or alternatively <code>\fontUbuntuLight</code> or <code>\fontUbuntuMedium</code>
 
 ##What is missing##
 
-The makefile is designed for a usual texlive installation on Ubuntu Linux. An autolocation of the TeX-distribution have to be done. Currently also the use of <code>pdflatex</code> is enforced, old-school dvi stuff will not work.
+Changing the font in the middle of a file does not affect all writings, as section captions or other external defined texts. If this matters to you, consider setting your whole document in Ubuntu font and trigger for example <code>\usefont{cmbx12}{m}{n}</code> where needed.
 
-There are also other shapes and style in the Ubuntu Font Family (Medium, Light) which have definitely to be included too. Changing them should be possible from the included package within the document.
+Currently the use of <code>pdflatex</code> is enforced, old-school dvi stuff will not work.
 
-Some testing would be nice too.
+By the way some testing would be nice too.
 
 ##Whom should be thanked##
 
