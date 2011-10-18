@@ -1,6 +1,6 @@
 This project enables you to use the original [Ubuntu Font Familiy](http://font.ubuntu.com) with LaTeX2e.
 
-Available fonts are Ubuntu Regular, Light and Medium (all version 0.71.2). They can be modified using the common `\textit` and `\textbf` commands. Please mind, that Light and Medium don't come with an own bold shape. Medium and Ubuntu Bold are used as fallbacks.
+Available fonts are Ubuntu Regular, Light, Medium and Condensed (as of version 0.80). They can be modified using the common `\textit` and `\textbf` commands. Please mind, that Light and Medium don't come with an own bold shape. Medium and Ubuntu Bold are used as fallbacks. There is no such thing for Ubuntu Condensed, it will always come by its default shape.
 
 [![Flattr this](http://api.flattr.com/button/flattr-badge-large.png")](http://flattr.com/thing/275508/Ubuntu-LaTeX-Fonts)
 
@@ -28,7 +28,7 @@ In case you'd liked to have you entire document be set using this font family ad
 \usepackage{ubuntu}
 ```
 
-Available package options are: `regular`, `light`, `medium`, standing for the different Ubuntu Fonts, respectively `none` for later activation.
+Available package options are: `regular`, `light`, `medium`, `condensed`, standing for the different Ubuntu Fonts, respectively `none` for later activation.
 
 If you want to change your font set mid-in your document just write:
 
@@ -45,7 +45,7 @@ If you want to change your font set mid-in your document just write:
 Here, the \LaTeX standard is used again.
 ```
 
-Alternatively `\fontUbuntuLight` or `\fontUbuntuMedium` are provided.
+Alternatively `\fontUbuntuLight`, `\fontUbuntuMedium` or `fontUbuntuCondensed` are provided.
 
 ##What is missing##
 
