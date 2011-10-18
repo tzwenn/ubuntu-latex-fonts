@@ -6,3 +6,4 @@ ubuntul Ubuntu-Light " T1Encoding ReEncodeFont " <ubuntul.pfb T1-WGL4.enc
 ubuntuli Ubuntu-Light-Italic " T1Encoding ReEncodeFont " <ubuntuli.pfb T1-WGL4.enc
 ubuntum Ubuntu-Medium " T1Encoding ReEncodeFont " <ubuntum.pfb T1-WGL4.enc
 ubuntumi Ubuntu-Medium-Italic " T1Encoding ReEncodeFont " <ubuntumi.pfb T1-WGL4.enc
+ubuntuc Ubuntu-Condensed " T1Encoding ReEncodeFont " <ubuntuc.pfb T1-WGL4.enc

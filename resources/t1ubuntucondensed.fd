@@ -1,0 +1,9 @@
+\ProvidesFile{t1ubuntucondensed.fd}[Ubuntu Condensed Font]
+\DeclareFontFamily{T1}{ubuntucondensed}{}
+
+%% Ubuntu Light
+%
+
+\DeclareFontShape{T1}{ubuntucondensed}{m}{n}{ <-> ubuntuc}{}
+
+\endinput
