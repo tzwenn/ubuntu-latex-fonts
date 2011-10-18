@@ -1,20 +1,20 @@
 StartFontMetrics 2.0
-Comment Converted at Mon May 16 20:47:20 2011 by ttf2afm from font file `ubuntumi.ttf'
+Comment Converted at Wed Oct 19 00:51:15 2011 by ttf2afm from font file `ubuntumi.ttf'
 Ubuntu-MediumItalic
 Ubuntu Medium Italic
 Ubuntu
 Medium
 ItalicAngle -13
 IsFixedPitch false
-FontBBox -168 -205 1691 967
+FontBBox -168 -205 3591 967
 UnderlinePosition -123
 UnderlineThickness 20
-Version 0.71
-Copyright 2010 Canonical Ltd.  Licensed under the Ubuntu Font Licence 1.0
+Version 0.80
+Copyright 2011 Canonical Ltd.  Licensed under the Ubuntu Font Licence 1.0
 EncodingScheme FontSpecific
 Ascender 932
 Descender -189
-StartCharMetrics 1267
+StartCharMetrics 1269
 C 0 ; WX 313 ; N grave ; B 150 576 372 789 ;
 C 1 ; WX 333 ; N acute ; B 141 583 379 792 ;
 C 2 ; WX 389 ; N circumflex ; B 121 578 412 784 ;
@@ -1279,9 +1279,11 @@ C -1 ; WX 656 ; N uni1FBC.alt ; B 7 -204 655 693 ;
 C -1 ; WX 696 ; N uni1FCC.alt ; B 78 -204 780 693 ;
 C -1 ; WX 772 ; N uni1FFC.alt ; B 52 -204 802 709 ;
 C -1 ; WX 568 ; N uni20B9 ; B 138 0 715 693 ;
-C -1 ; WX 425 ; N uniE0FF ; B 130 345 561 776 ;
+C -1 ; WX 782 ; N uniE0FF ; B 109 -15 833 709 ;
 C -1 ; WX 720 ; N ampersand.001 ; B 105 -14 795 709 ;
-C -1 ; WX 1717 ; N uniEFFD ; B 53 -13 1691 402 ;
+C -1 ; WX 1717 ; N uniEFFD ; B 53 -13 1737 402 ;
+C -1 ; WX 3511 ; N ubuntu ; B 136 -12 3591 776 ;
+C -1 ; WX 451 ; N uniF0FF ; B 130 345 561 776 ;
 C -1 ; WX 977 ; N uniF000 ; B 73 0 903 693 ;
 EndCharMetrics
 StartKernData

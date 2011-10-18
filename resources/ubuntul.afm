@@ -1,20 +1,20 @@
 StartFontMetrics 2.0
-Comment Converted at Mon May 16 20:47:19 2011 by ttf2afm from font file `ubuntul.ttf'
+Comment Converted at Wed Oct 19 00:51:15 2011 by ttf2afm from font file `ubuntul.ttf'
 Ubuntu-Light
 Ubuntu Light
 Ubuntu
 Light
 ItalicAngle 0
 IsFixedPitch false
-FontBBox -157 -196 1551 958
+FontBBox -157 -196 3521 958
 UnderlinePosition -105
 UnderlineThickness 56
-Version 0.71
-Copyright 2010 Canonical Ltd.  Licensed under the Ubuntu Font Licence 1.0
+Version 0.80
+Copyright 2011 Canonical Ltd.  Licensed under the Ubuntu Font Licence 1.0
 EncodingScheme FontSpecific
 Ascender 932
 Descender -189
-StartCharMetrics 1262
+StartCharMetrics 1264
 C 0 ; WX 376 ; N grave ; B 60 583 264 773 ;
 C 1 ; WX 376 ; N acute ; B 112 583 316 773 ;
 C 2 ; WX 376 ; N circumflex ; B 56 584 320 762 ;
@@ -1275,9 +1275,11 @@ C -1 ; WX 641 ; N uni1FBC.alt ; B 10 -186 631 693 ;
 C -1 ; WX 692 ; N uni1FCC.alt ; B 90 -186 602 693 ;
 C -1 ; WX 780 ; N uni1FFC.alt ; B 56 -186 724 708 ;
 C -1 ; WX 564 ; N uni20B9 ; B 92 0 565 693 ;
-C -1 ; WX 455 ; N uniE0FF ; B 12 345 443 776 ;
-C -1 ; WX 1682 ; N uniEFFD ; B 36 -12 1551 392 ;
+C -1 ; WX 782 ; N uniE0FF ; B 29 -15 753 709 ;
+C -1 ; WX 1682 ; N uniEFFD ; B 36 -12 1645 392 ;
 C -1 ; WX 977 ; N uniF000 ; B 73 0 903 693 ;
+C -1 ; WX 3511 ; N ubuntu ; B 66 -12 3521 776 ;
+C -1 ; WX 451 ; N uniF0FF ; B 10 345 441 776 ;
 EndCharMetrics
 StartKernData
 StartKernPairs 4987

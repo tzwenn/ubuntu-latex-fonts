@@ -1,20 +1,20 @@
 StartFontMetrics 2.0
-Comment Converted at Fri May 13 19:26:15 2011 by ttf2afm from font file `ubuntubi.ttf'
+Comment Converted at Wed Oct 19 00:51:14 2011 by ttf2afm from font file `ubuntubi.ttf'
 Ubuntu-BoldItalic
 Ubuntu Bold Italic
 Ubuntu
 Bold
 ItalicAngle -13
 IsFixedPitch false
-FontBBox -253 -221 1526 962
+FontBBox -253 -221 3521 962
 UnderlinePosition -123
 UnderlineThickness 120
-Version 0.70
-Copyright 2010 Canonical Ltd.  Licensed under the Ubuntu Font Licence 1.0
+Version 0.80
+Copyright 2011 Canonical Ltd.  Licensed under the Ubuntu Font Licence 1.0
 EncodingScheme FontSpecific
 Ascender 932
 Descender -189
-StartCharMetrics 1267
+StartCharMetrics 1269
 C 0 ; WX 247 ; N grave ; B 154 576 381 799 ;
 C 1 ; WX 286 ; N acute ; B 177 576 414 799 ;
 C 2 ; WX 398 ; N circumflex ; B 197 576 499 784 ;
@@ -260,7 +260,7 @@ C -1 ; WX 240 ; N CR ; B 80 -13 391 693 ;
 C -1 ; WX 240 ; N space ; B 80 -13 391 693 ;
 C -1 ; WX 274 ; N quotesingle ; B 180 466 374 760 ;
 C -1 ; WX 568 ; N Euro ; B 85 -14 699 706 ;
-C -1 ; WX 568 ; N florin ; B -47 -185 658 707 ;
+C -1 ; WX 438 ; N florin ; B -97 -185 608 776 ;
 C -1 ; WX 946 ; N ellipsis ; B 60 -13 936 171 ;
 C -1 ; WX 487 ; N dagger ; B 123 -145 557 693 ;
 C -1 ; WX 487 ; N daggerdbl ; B 60 -145 557 693 ;
@@ -552,7 +552,7 @@ C -1 ; WX 746 ; N Uhorn ; B 120 -14 926 801 ;
 C -1 ; WX 611 ; N uhorn ; B 99 -12 770 632 ;
 C -1 ; WX 807 ; N uni01B1 ; B 140 -16 907 693 ;
 C -1 ; WX 716 ; N uni01B2 ; B 114 -14 746 701 ;
-C -1 ; WX 694 ; N uni01B3 ; B 140 0 839 703 ;
+C -1 ; WX 694 ; N uni01B3 ; B 170 0 865 703 ;
 C -1 ; WX 595 ; N uni01B4 ; B -35 -189 695 533 ;
 C -1 ; WX 638 ; N uni01B5 ; B 45 0 738 693 ;
 C -1 ; WX 526 ; N uni01B6 ; B 60 0 606 526 ;
@@ -1279,13 +1279,15 @@ C -1 ; WX 714 ; N uni1FBC.alt ; B 15 -220 689 693 ;
 C -1 ; WX 714 ; N uni1FCC.alt ; B 75 -220 799 693 ;
 C -1 ; WX 807 ; N uni1FFC.alt ; B 60 -220 827 710 ;
 C -1 ; WX 568 ; N uni20B9 ; B 129 0 722 693 ;
-C -1 ; WX 425 ; N uniE0FF ; B 130 345 561 776 ;
+C -1 ; WX 782 ; N uniE0FF ; B 130 -15 854 709 ;
 C -1 ; WX 739 ; N ampersand.001 ; B 100 -14 819 709 ;
-C -1 ; WX 1341 ; N uniEFFD ; B 57 -13 1381 409 ;
+C -1 ; WX 1704 ; N uniEFFD ; B 57 -13 1744 409 ;
+C -1 ; WX 3511 ; N ubuntu ; B 66 -12 3521 776 ;
+C -1 ; WX 451 ; N uniF0FF ; B 130 345 561 776 ;
 C -1 ; WX 977 ; N uniF000 ; B 73 0 903 693 ;
 EndCharMetrics
 StartKernData
-StartKernPairs 8265
+StartKernPairs 8366
 KPX numbersign zero.alt -20
 KPX numbersign two.alt -20
 KPX numbersign three.alt -10
@@ -8565,6 +8567,18 @@ KPX Gamma psi -60
 KPX Gamma omega -28
 KPX Gamma iotadieresis 23
 KPX Gamma iotadieresistonos 63
+KPX Gamma uni1F32 32
+KPX Gamma uni1F33 42
+KPX Gamma uni1F34 1
+KPX Gamma uni1F35 1
+KPX Gamma uni1F76 -10
+KPX Gamma uni1F77 -50
+KPX Gamma uni1FD0 -21
+KPX Gamma uni1FD1 10
+KPX Gamma uni1FD2 42
+KPX Gamma uni1FD3 52
+KPX Gamma uni1FD7 10
+KPX Gamma uni1FE2 -40
 KPX uni0394 ampersand -15
 KPX uni0394 parenleft -10
 KPX uni0394 asterisk -80
@@ -8619,8 +8633,9 @@ KPX Epsilon Lambda 15
 KPX Epsilon zeta -10
 KPX Epsilon phi -15
 KPX Epsilon iotadieresistonos 47
+KPX Epsilon uni1FD2 32
+KPX Epsilon uni1FD3 41
 KPX Zeta slash 17
-KPX Zeta zero 30
 KPX Zeta backslash 17
 KPX Zeta bracketright 13
 KPX Zeta braceright 20
@@ -8653,10 +8668,17 @@ KPX Zeta psi -10
 KPX Zeta omega -30
 KPX Zeta iotadieresis 1
 KPX Zeta iotadieresistonos 39
+KPX Zeta uni1F32 11
+KPX Zeta uni1F33 10
+KPX Zeta uni1FD1 -7
+KPX Zeta uni1FD2 32
+KPX Zeta uni1FD3 42
 KPX Eta guilsinglleft -11
 KPX Eta quoteright 10
 KPX Eta phi -10
 KPX Eta iotadieresistonos 21
+KPX Eta uni1FD2 21
+KPX Eta uni1FD3 21
 KPX Theta parenright -15
 KPX Theta hyphen 30
 KPX Theta period -10
@@ -8680,6 +8702,8 @@ KPX Theta lambda -20
 KPX Iota quoteright 10
 KPX Iota zeta -15
 KPX Iota iotadieresistonos 21
+KPX Iota uni1FD2 21
+KPX Iota uni1FD3 21
 KPX Kappa ampersand -20
 KPX Kappa parenleft -20
 KPX Kappa parenright 10
@@ -8733,6 +8757,16 @@ KPX Kappa psi -30
 KPX Kappa omega -40
 KPX Kappa iotadieresis 23
 KPX Kappa iotadieresistonos 63
+KPX Kappa uni1F32 10
+KPX Kappa uni1F33 41
+KPX Kappa uni1F35 10
+KPX Kappa uni1F76 -11
+KPX Kappa uni1FD0 -10
+KPX Kappa uni1FD1 10
+KPX Kappa uni1FD2 73
+KPX Kappa uni1FD3 62
+KPX Kappa uni1FD6 -5
+KPX Kappa uni1FD7 16
 KPX Lambda ampersand -15
 KPX Lambda parenleft -10
 KPX Lambda asterisk -80
@@ -8795,9 +8829,14 @@ KPX Nu zeta -10
 KPX Nu lambda -10
 KPX Nu phi -10
 KPX Nu iotadieresistonos 19
+KPX Nu uni1FD2 19
+KPX Nu uni1FD3 19
 KPX Xi quoteright 30
 KPX Xi Guilsinglleft -19
 KPX Xi iotadieresistonos 39
+KPX Xi uni1F32 17
+KPX Xi uni1FD2 41
+KPX Xi uni1FD3 41
 KPX Omicron parenright -15
 KPX Omicron hyphen 30
 KPX Omicron period -10
@@ -8819,6 +8858,8 @@ KPX Omicron Omega -10
 KPX Omicron beta -11
 KPX Omicron lambda -20
 KPX Pi iotadieresistonos 19
+KPX Pi uni1FD2 21
+KPX Pi uni1FD3 21
 KPX Rho ampersand -16
 KPX Rho parenright -22
 KPX Rho hyphen 10
@@ -8899,6 +8940,15 @@ KPX Sigma psi -9
 KPX Sigma omega -13
 KPX Sigma iotadieresis 24
 KPX Sigma iotadieresistonos 52
+KPX Sigma uni1F32 17
+KPX Sigma uni1F33 27
+KPX Sigma uni1F34 7
+KPX Sigma uni1F35 17
+KPX Sigma uni1FD1 7
+KPX Sigma uni1FD2 57
+KPX Sigma uni1FD3 57
+KPX Sigma uni1FD6 7
+KPX Sigma uni1FD7 7
 KPX Tau ampersand -20
 KPX Tau parenleft -9
 KPX Tau parenright 14
@@ -8953,6 +9003,21 @@ KPX Tau omega -40
 KPX Tau iotadieresis 47
 KPX Tau iotadieresistonos 86
 KPX Tau upsilondieresistonos -24
+KPX Tau uni1F30 -50
+KPX Tau uni1F32 52
+KPX Tau uni1F33 52
+KPX Tau uni1F34 21
+KPX Tau uni1F35 32
+KPX Tau uni1F76 3
+KPX Tau uni1F77 -20
+KPX Tau uni1FD0 10
+KPX Tau uni1FD1 42
+KPX Tau uni1FD2 83
+KPX Tau uni1FD3 83
+KPX Tau uni1FD6 32
+KPX Tau uni1FD7 21
+KPX Tau uni1FE2 -21
+KPX Tau uni1FE3 -31
 KPX Upsilon ampersand -60
 KPX Upsilon parenleft -24
 KPX Upsilon parenright 17
@@ -9010,6 +9075,16 @@ KPX Upsilon psi -40
 KPX Upsilon omega -60
 KPX Upsilon iotadieresis 39
 KPX Upsilon iotadieresistonos 70
+KPX Upsilon uni1F32 23
+KPX Upsilon uni1F33 42
+KPX Upsilon uni1F34 11
+KPX Upsilon uni1F35 13
+KPX Upsilon uni1FD0 -7
+KPX Upsilon uni1FD1 21
+KPX Upsilon uni1FD2 66
+KPX Upsilon uni1FD3 63
+KPX Upsilon uni1FD6 4
+KPX Upsilon uni1FD7 18
 KPX Phi parenright -32
 KPX Phi hyphen 40
 KPX Phi period -40
@@ -9081,6 +9156,11 @@ KPX Chi psi -20
 KPX Chi omega -25
 KPX Chi iotadieresis 8
 KPX Chi iotadieresistonos 39
+KPX Chi uni1F32 -1
+KPX Chi uni1F33 15
+KPX Chi uni1F35 -1
+KPX Chi uni1FD2 41
+KPX Chi uni1FD3 41
 KPX Psi ampersand -22
 KPX Psi parenleft -10
 KPX Psi period -70
@@ -9125,6 +9205,10 @@ KPX Psi psi -10
 KPX Psi omega -16
 KPX Psi iotadieresis -10
 KPX Psi iotadieresistonos 32
+KPX Psi uni1F32 5
+KPX Psi uni1F33 5
+KPX Psi uni1FD2 31
+KPX Psi uni1FD3 31
 KPX Omega upsilon -12
 KPX alpha asterisk -10
 KPX alpha hyphen 10
@@ -9190,6 +9274,9 @@ KPX delta quoteright -18
 KPX delta questiondown -20
 KPX delta gamma -10
 KPX delta chi -30
+KPX delta iotadieresistonos 10
+KPX delta uni1FD2 10
+KPX delta uni1FD3 10
 KPX epsilon period 20
 KPX epsilon slash 35
 KPX epsilon question -20
@@ -9244,6 +9331,8 @@ KPX zeta psi -60
 KPX zeta omega -40
 KPX zeta iotadieresis 31
 KPX zeta iotadieresistonos 78
+KPX zeta uni1FD2 62
+KPX zeta uni1FD3 63
 KPX eta parenright 15
 KPX eta asterisk -15
 KPX eta hyphen 20
@@ -9399,6 +9488,8 @@ KPX xi phi -10
 KPX xi omega -8
 KPX xi iotadieresis 32
 KPX xi iotadieresistonos 70
+KPX xi uni1FD2 62
+KPX xi uni1FD3 72
 KPX omicron parenright -20
 KPX omicron asterisk -25
 KPX omicron hyphen 35
@@ -9551,6 +9642,18 @@ KPX omega quoteright -20
 KPX omega questiondown -15
 KPX omega gamma -20
 KPX omega nu -10
+KPX iotadieresistonos beta 20
+KPX iotadieresistonos zeta 41
+KPX iotadieresistonos theta 10
+KPX iotadieresistonos lambda 52
+KPX uni1FD2 beta 20
+KPX uni1FD2 zeta 42
+KPX uni1FD2 theta 21
+KPX uni1FD2 lambda 52
+KPX uni1FD3 beta 20
+KPX uni1FD3 zeta 41
+KPX uni1FD3 theta 10
+KPX uni1FD3 lambda 62
 EndKernPairs
 EndKernData
 EndFontMetrics
