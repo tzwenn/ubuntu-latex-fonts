@@ -45,7 +45,7 @@ If you want to change your font set mid-in your document just write:
 Here, the \LaTeX standard is used again.
 ```
 
-Alternatively `\fontUbuntuLight`, `\fontUbuntuMedium` or `fontUbuntuCondensed` are provided.
+Alternatively `\fontUbuntuLight`, `\fontUbuntuMedium` or `\fontUbuntuCondensed` are provided.
 
 ##What is missing##
 
