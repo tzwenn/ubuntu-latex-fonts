@@ -22,6 +22,9 @@
 \newboolean{bUbuntuMedium}
 \setboolean{bUbuntuMedium}{false}
 
+\newboolean{bUbuntuCondensed}
+\setboolean{bUbuntuCondensed}{false}
+
 % Parse options - this is ugly
 
 \DeclareOption{none}{%
@@ -29,6 +32,7 @@
 	\setboolean{bUbuntuNone}{true}%
 	\setboolean{bUbuntuLight}{false}%
 	\setboolean{bUbuntuMedium}{false}%
+	\setboolean{bUbuntuCondensed}{false}%
 }
 
 \DeclareOption{regular}{%
@@ -36,6 +40,7 @@
 	\setboolean{bUbuntuNone}{false}%
 	\setboolean{bUbuntuLight}{false}%
 	\setboolean{bUbuntuMedium}{false}%
+	\setboolean{bUbuntuCondensed}{false}%
 }
 
 \DeclareOption{light}{%
@@ -43,6 +48,7 @@
 	\setboolean{bUbuntuNone}{false}%
 	\setboolean{bUbuntuLight}{true}%
 	\setboolean{bUbuntuMedium}{false}%
+	\setboolean{bUbuntuCondensed}{false}%
 }
 
 \DeclareOption{medium}{%
@@ -50,6 +56,15 @@
 	\setboolean{bUbuntuNone}{false}%
 	\setboolean{bUbuntuLight}{false}%
 	\setboolean{bUbuntuMedium}{true}%
+	\setboolean{bUbuntuCondensed}{false}%
+}
+
+\DeclareOption{condensed}{%
+	\setboolean{bUbuntuRegular}{false}%
+	\setboolean{bUbuntuNone}{false}%
+	\setboolean{bUbuntuLight}{false}%
+	\setboolean{bUbuntuMedium}{false}%
+	\setboolean{bUbuntuCondensed}{true}%
 }
 
 \DeclareOption*{%
@@ -87,6 +102,15 @@
 	\usefont{T1}{ubuntumedium}{m}{n}
 }
 
+\newcommand{\UbuntuCondensed}{%
+	\renewcommand{\encodingdefault}{T1}%
+	\renewcommand{\rmdefault}{ubuntucondensed}%
+}
+
+\newcommand{\fontUbuntuCondensed}{%
+	\usefont{T1}{ubuntucondensed}{m}{n}
+}
+
 % Initial font - an ifcase is much nicer, isn't it?
 
 \ifthenelse{\boolean{bUbuntuRegular}}%
@@ -97,6 +121,8 @@
 	{\UbuntuLight{}}%
 {\ifthenelse{\boolean{bUbuntuMedium}}%
 	{\UbuntuMedium{}}%
-{}}}}%
+{\ifthenelse{\boolean{bUbuntuCondensed}}%
+	{\UbuntuCondensed{}}%
+{}}}}}%
 
 \endinput
