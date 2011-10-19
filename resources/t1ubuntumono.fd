@@ -1,0 +1,16 @@
+\ProvidesFile{t1ubuntumono.fd}[Ubuntu Monospace Font]
+\DeclareFontFamily{T1}{ubuntumono}{}
+
+%% Ubuntu Monospace Font, also in bold and italic variant
+%
+
+\DeclareFontShape{T1}{ubuntumono}{m}{n}{ <-> ubuntumono}{}
+\DeclareFontShape{T1}{ubuntumono}{m}{it}{ <-> ubuntumonoi}{}
+
+\DeclareFontShape{T1}{ubuntumono}{b}{n}{ <-> ubuntumonobd}{}
+\DeclareFontShape{T1}{ubuntumono}{b}{it}{ <-> ubuntumonobi}{}
+
+\DeclareFontShape{T1}{ubuntumono}{bx}{n}{<->ssub * ubuntumono/b/n}{}
+\DeclareFontShape{T1}{ubuntumono}{bx}{it}{<->ssub * ubuntumono/b/it}{}
+
+\endinput
