@@ -87,6 +87,15 @@
 	\usefont{T1}{ubuntumedium}{m}{n}%
 }
 
+\newcommand{\UbuntuMono}{%
+	\renewcommand{\encodingdefault}{T1}%
+	\renewcommand{\ttdefault}{ubuntumono}%
+}
+
+\newcommand{\fontUbuntuMono}{%
+	\usefont{T1}{ubuntumedium}{m}{n}%
+}
+
 % Initial font - an ifcase is much nicer, isn't it?
 
 \ifthenelse{\boolean{bUbuntuRegular}}%
@@ -101,6 +110,6 @@
 
 \ifthenelse{\boolean{bUbuntuNone}}%
 {}%
-{\renewcommand{\ttdefault}{ubuntumono}}%
+{\renewcommand{\UbuntuMono}}%
 
 \endinput
