@@ -84,7 +84,7 @@
 }
 
 \newcommand{\fontUbuntuMedium}{%
-	\usefont{T1}{ubuntumedium}{m}{n}
+	\usefont{T1}{ubuntumedium}{m}{n}%
 }
 
 % Initial font - an ifcase is much nicer, isn't it?
@@ -98,5 +98,9 @@
 {\ifthenelse{\boolean{bUbuntuMedium}}%
 	{\UbuntuMedium{}}%
 {}}}}%
+
+\ifthenelse{\boolean{bUbuntuNone}}%
+{}%
+{\renewcommand{\ttdefault}{ubuntumono}}%
 
 \endinput
